@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-Pesa Payment</title>
+    <link rel="stylesheet" href="styles/checkout.css">
+</head>
+<body>
+    <div class="container">
+        <h2>M-Pesa Payment</h2>
+        
+        <!-- Display total amount from the cart -->
+        <p>Total Amount: <span id="total-amount">Ksh 0.00</span></p>
+        
+        <!-- Input field for phone number -->
+        <label for="phone-number">Enter your phone number:</label>
+        <input type="text" id="phone-number" placeholder="2547XXXXXXXX" required>
+        
+        <!-- Pay button -->
+        <button id="payButton">Pay with M-Pesa</button>
+        
+        <!-- Response message -->
+        <p id="response"></p>
+    </div>
+    
+    <script src="scripts/checkout.js"></script>
+</body>
+</html>

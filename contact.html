@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Iriaini Tea Factory for inquiries, support, or feedback.">
+    <title>Contact Us - Iriaini Tea Factory</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Contact Hero Section -->
+    <header class="contact-hero-section">
+        <div class="container text-center">
+            <h1>Contact Us</h1>
+            <p>We're here to help. Reach out to us for inquiries, support, or feedback.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row">
+            <!-- Contact Information Column -->
+            <div class="col-md-6 mb-4">
+                <h2 class="mb-4">Get in Touch</h2>
+
+                <!-- Location -->
+                <div class="mb-4">
+                    <h5><i class="fas fa-map-marker-alt me-2"></i>Our Location</h5>
+                    <p class="text-muted">Iriaini Tea Factory, Othaya, Nyeri, Kenya</p>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-4">
+                    <h5><i class="fas fa-envelope me-2"></i>Email Us</h5>
+                    <p class="text-muted">info@iriaini.ktdateas.com</p>
+                </div>
+
+                <!-- Phone -->
+                <div class="mb-4">
+                    <h5><i class="fas fa-phone me-2"></i>Call Us</h5>
+                    <p class="text-muted">+254 797 963 545</p>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="mb-4">
+                    <h5><i class="fas fa-map-pin me-2"></i>Find Us Here</h5>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6385622318653!2d36.90558666997839!3d-0.5438848340251572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1828f381cf6bf27b%3A0x2ab964dc4957e587!2sIriain%C4%A9%20Tea%20Factory!5e0!3m2!1sen!2ske!4v1732786824073!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Column -->
+            <div class="col-md-6 mb-4">
+                <h2 class="mb-4">Send Us a Message</h2>
+                <form action="https://formspree.io/f/mwplvdaw" method="POST" id="contact-form">
+                    <!-- Name Input -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input name="Name" type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input name="Email" type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <!-- Message Input -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea name="Message" class="form-control" id="message" rows="5" placeholder="Type your message here" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- jQuery (Required for Loading Navbar and Footer) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            // Load the navigation bar
+            $("#navbar-placeholder").load("navbar.html");
+
+            // Load the footer
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS for Contact Form -->
+     <!--    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Validate form inputs
+            if (!name || !email || !message) {
+                alert('Please fill out all fields.');
+                return;
+            }
+
+            // Simulate form submission (replace with actual backend logic)
+            alert(`Thank you, ${name}! Your message has been sent.`);
+            document.getElementById('contact-form').reset(); // Clear the form
+        });
+    </script> -->
+</body>
+</html>
