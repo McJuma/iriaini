@@ -17,18 +17,26 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-<!-- Placeholder for the navigation bar -->
-<div id="navbar-placeholder"></div>
+        <!-- Navbar -->
+    <!-- Placeholder for the navigation bar -->
+    <div id="navbar-placeholder"></div>
 
-<!-- jQuery (Required for Loading Navbar) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    $(function() {
-        // Load the navigation bar into the placeholder
-        $("#navbar-placeholder").load("navbar.html");
-    });
-</script>
+    <!-- jQuery (Required for Loading Navbar) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            // Load the navigation bar into the placeholder
+            $("#navbar-placeholder").load("navbar.html");
+        });
+    </script>
+    <script>
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    </script>
 
     <!-- Hero Section -->
     <header class="hero-section">
@@ -143,7 +151,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer id="bottom">
         <div id="footer-placeholder"></div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
