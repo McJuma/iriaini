@@ -249,3 +249,7 @@
         padding: 60px 20px;
     }
 }
+#navbar-placeholder{
+    position: sticky;
+    top: 0;
+}
