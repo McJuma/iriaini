@@ -250,6 +250,7 @@
     }
 }
 #navbar-placeholder{
+    z-index: 5;
     position: sticky;
     top: 0;
 }
