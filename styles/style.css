@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    max-width: 100%;
+    height: auto;
+}
 
 /* Navbar Styling */
 .custom-navbar {
